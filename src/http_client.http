@@ -1,0 +1,30 @@
+GET https://localhost:5001/api/TodoItems HTTP/1.1
+
+###
+
+GET https://localhost:5001/api/TodoItems/1 HTTP/1.1
+
+###
+
+POST https://localhost:5001/api/TodoItems HTTP/1.1
+content-type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+
+###
+
+PUT https://localhost:5001/api/TodoItems/1 HTTP/1.1
+content-type: application/json
+
+{
+  "id": 1,
+  "name":"walk cat",
+  "isComplete":true
+}
+
+###
+
+DELETE https://localhost:5001/api/TodoItems/2 HTTP/1.1
